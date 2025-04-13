@@ -46,14 +46,16 @@ Your input CSV file **must** include the following columns (with no headers, foo
 ### Step 3: Run the Script
 To generate the capital gains report, use the command:
 
-For detailed (verbose) logging, add the --verbose flag:
+   ```sh
+   poetry run python calculastor.py
+   ```
 
 ### Step 4: Review the Outputs
 Capital Gains Report:
-The report is saved under the reports folder with the run date appended (e.g., capital_gains_report_20250406.csv).
+The report is saved under the reports folder with the run date appended (e.g., reports/capital_gains_report_20250406.csv).
 
 #### Enhanced Transactions Report:
-If any sell transactions could not be fully matched with previous buys, they are recorded separately in a CSV file (e.g., enhanced_transactions_20250406.csv) in the reports folder.
+If any sell transactions could not be fully matched with previous buys, they are recorded separately in a CSV file (e.g., reports/enhanced_transactions_20250406.csv) in the reports folder.
 
 #### Logs:
 All logs are written to the logs folder. Check these for any informational messages, warnings, or errors in case of issues.
