@@ -1,0 +1,5 @@
+# exclude all files in the data directory
+*.csv
+
+# exclude all files in the log directory
+*.log
